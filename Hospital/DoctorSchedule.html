@@ -1,0 +1,56 @@
+
+<head>
+   <link rel="stylesheet" href="template.css">
+</head>
+<style> 
+.bg 
+{
+  background-image: url("docsc.jpg");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+<body class="bg">
+<center>
+<form name=f method=post action=doctorschedule.py>
+<table>
+<tr>
+ <th colspan=2><marquee>DOCTOR SCHEDULE</marquee></th>
+</tr>
+<tr>
+<td>Doctor id</td>
+<td><input type=text name=t1></td>
+</tr>
+<tr>
+<td>Start Date</td>
+<td><input type=date name=t2></td>
+</tr>
+<tr>
+<td>End Date</td>
+<td><input type=date name=t3></td>
+</tr>
+<tr>
+<td>Start time</td>
+<td><input type=time name=t4></td>
+</tr>
+<tr>
+<td>End time</td>
+<td><input type=time name=t5></td>
+</tr>
+<tr>
+<td colspan=2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type=reset value="New"><input type=submit value="Save" name=b1 >
+	<input type=submit value="Update" name=b1 ><input type=submit value="Delete" name=b1></td>
+</tr>
+<tr>
+<td colspan=2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type=submit value="All search" name=b1><input type=submit value="Psearch" name=b1 ><input type=submit value="Menu" name=b1 ></td>
+</table>
+</form>
+</center>
+</body>
+
+
+
+

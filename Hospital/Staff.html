@@ -1,0 +1,69 @@
+<head>
+   <link rel="stylesheet" href="template.css">
+</head>
+<style> 
+.bg 
+{
+  background-image: url("staff3.jpg");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+<body class="bg">
+<center>
+<form name=f method=post action=staff.py>
+<table>
+<tr>
+<th colspan=2><marquee>STAFF</marquee></th>
+</tr>
+<td>Staff id</td>
+<td ><input type=text name=t1></td>
+</tr>
+<tr>
+<td>Staff Name</td>
+<td><input type=text name=t2 onkeypress= "return acceptonlychar(event)"></td>
+</tr>
+<tr>
+<td>Designation</td>
+<td><input type=text name=t3></td>
+</tr>
+<tr>
+<td>Contact Number</td>
+<td><input type=number name=t4></td>
+</tr>
+<tr>
+<td>Email</td>
+<td><input type=text name=t5></td>
+</tr>
+<tr>
+<td>Hospital id</td>
+<td><input type=text name=t6></td>
+</tr>
+<tr>
+<td colspan=2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type=reset value="New"><input type=submit value="Save" name=b1 >
+	<input type=submit value="Update" name=b1 ><input type=submit value="Delete" name=b1></td>
+</tr>
+<tr>
+<td colspan=2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type=submit value="All search" name=b1><input type=submit value="Psearch" name=b1 ><input type=submit value="Menu" name=b1 ></td>
+</tr>
+</table>
+</form>
+</center>
+</body>
+<script>
+	function acceptonlychar(e)
+	{
+		var ch=window.event.keyCode
+		if((ch<65 || ch>122)||(ch>=91 && ch<=96))
+			return(false)
+		else
+			return(true)
+	}
+</script>
+
+
+
+
